@@ -1,0 +1,21 @@
+Create Express app
+1) cd my base proj dir
+2) nvm use 18
+Now using node v18.18.2 (npm v9.8.1)
+3) npx express-generator expressback 
+Abvoe command gives 
+   change directory:
+     $ cd expressback
+
+   install dependencies:
+     $ npm install
+
+   run the app:
+     $ DEBUG=expressback:* npm start
+
+4) cd expressback
+5) npm install
+6) npm start
+7) Added route and maping for http://localhost:9000/pocApi
+
+8) npm install --save cors
