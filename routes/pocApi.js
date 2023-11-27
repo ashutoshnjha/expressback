@@ -1,7 +1,18 @@
 var express = require("express");
 var pocRouter = express.Router();
+const postData = [
+    {id: 1, name: 'Alice', country: 'Austria'},
+    {id: 2, name: 'Bob', country: 'Belgium'},
+    {id: 3, name: 'Carl', country: 'Canada'},
+  ];
+
 
 var data = [
+    [
+        {id: 1, name: 'Alice', country: 'Austria'},
+        {id: 2, name: 'Bob', country: 'Belgium'},
+        {id: 3, name: 'Carl', country: 'Canada'},
+      ],
     {
         "title": "Career Conselling",
         "description": "Career Conselling",
@@ -25,6 +36,9 @@ var data = [
 ]
 pocRouter.get("/", function(req, res, next) {
     res.send(data);
+});
+pocRouter.post("/", function(req, res, next) {
+    res.send(postData);
 });
 
 module.exports = pocRouter;
